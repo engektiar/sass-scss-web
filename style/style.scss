@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$primaryColor: #15f00a;
+$secoundayColor: #9ca49b;
+$textColor: #c90feefd;
+$mixinBgcolor: #e308f1;
+$CardWithd: 400px;
+$backgroudnColor: #88e8f1;
+$margin: 20px;
+$padding: 20px;
+
+// normaly using scss
+.normal {
+  width: $CardWithd;
+  background-color: $backgroudnColor;
+  margin: $margin;
+  padding: $padding;
+  .cardtitle {
+    text-transform: capitalize;
+    color: $textColor;
+  }
+}
+// servise part
+@import "servises";
+
+// _mixin use kora hoisa
+@import "mixin";
+// extend color
+.extend {
+  @extend .normal;
+  background-color: #f1888d;
+}

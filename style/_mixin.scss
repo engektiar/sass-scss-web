@@ -1,0 +1,13 @@
+@mixin samedesing($nthcolor) {
+  background-color: $nthcolor;
+  width: $CardWithd;
+  margin: $margin;
+  padding: $padding;
+  text-transform: capitalize;
+}
+.mixine {
+  @include samedesing(Red);
+}
+.mixine2 {
+  @include samedesing(blue);
+}
